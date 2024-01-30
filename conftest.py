@@ -18,7 +18,9 @@ def pytest_configure():
 @pytest.fixture()
 def driver():
     try:
-        driver = webdriver.Chrome()
+        options = webdriver.ChromeOptions()
+        options.add_argument('--headless')
+        driver = webdriver.Chrome(options=options)
         logging.info("Browser is opened successfully")
         driver.maximize_window()
         yield driver
