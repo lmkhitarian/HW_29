@@ -20,6 +20,7 @@ def driver():
     try:
         options = webdriver.ChromeOptions()
         options.add_argument('--headless')
+        options.add_argument('--window-size=1920x1080') 
         driver = webdriver.Chrome(options=options)
         logging.info("Browser is opened successfully")
         driver.maximize_window()
