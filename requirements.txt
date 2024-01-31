@@ -1,5 +1,6 @@
 allure-pytest
 allure-python-commons
 pycodestyle
-pytestpytest-xdist
+pytest-xdist
+requests
 selenium

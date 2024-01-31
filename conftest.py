@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.common.exceptions import WebDriverException
-from homework28.config import logFileName
+from config import logFileName
 import logging
 import pytest
 import os
